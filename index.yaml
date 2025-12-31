@@ -1,0 +1,13 @@
+apiVersion: v1
+entries:
+  nextjs-app:
+  - apiVersion: v2
+    created: "2025-12-31T08:29:21.765301302Z"
+    description: A Helm chart for Next.js application
+    digest: 9551fb9dea5c5ba13d3d655e9461def342f1c172b2c823d205d41382e7a1a239
+    name: nextjs-app
+    type: application
+    urls:
+    - https://github.com/katipwork/helm-charts/releases/download/nextjs-app-1.0.0/nextjs-app-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-12-31T08:29:21.765311581Z"
