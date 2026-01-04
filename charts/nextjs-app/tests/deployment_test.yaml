@@ -1,0 +1,22 @@
+suite: deployment
+templates:
+  - deployment.yaml
+tests:
+  - it: should have the correct replicas
+    asserts:
+      - equal:
+          path: spec.replicas
+          value: 2
+  - it: should have the correct container image
+    asserts:
+      - equal:
+          path: spec.template.spec.containers[0].image
+          value: "nextjs-app:latest"
+  - it: should have the correct environment variables
+    asserts:
+      - equal:
+          path: spec.template.spec.containers[0].env[0].name
+          value: "NODE_ENV"
+      - equal:
+          path: spec.template.spec.containers[0].env[0].value
+          value: "production"
