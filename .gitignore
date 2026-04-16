@@ -1,0 +1,6 @@
+.DS_Store
+charts/*/charts/*.tgz
+*.debug
+values.local.yaml
+values.*.local.yaml
+

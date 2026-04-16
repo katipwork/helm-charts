@@ -1,0 +1,66 @@
+image:
+  repository: nginx
+  tag: "1.25"
+  pullPolicy: IfNotPresent
+
+replicaCount: 1
+
+nameOverride: ""
+fullnameOverride: ""
+
+podAnnotations: {}
+
+service:
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  className: nginx
+  host: ""
+  path: /
+  pathType: Prefix
+  tls: []
+  annotations: {}
+
+httpRoute:
+  enabled: false
+  parentRefs: []
+  hostnames: []
+  rules: []
+
+configMap:
+  enabled: false
+  annotations: {}
+  data: {}
+  files: {}
+
+secret:
+  enabled: false
+  type: Opaque
+  data: {}
+  stringData: {}
+
+externalSecret:
+  enabled: false
+  refreshInterval: 1h
+  secretStoreRef:
+    name: ""
+    kind: ClusterSecretStore
+  target:
+    name: ""
+    creationPolicy: Owner
+  data: []
+  dataFrom: []
+
+env: []
+envFrom: []
+resources: {}
+volumeMounts: []
+volumes: []
+nodeSelector: {}
+tolerations: []
+affinity: {}
+livenessProbe: {}
+readinessProbe: {}
+initContainers: []
