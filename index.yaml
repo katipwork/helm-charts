@@ -13,6 +13,20 @@ entries:
   example-app:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2026-04-18T09:03:16.918061392Z"
+    dependencies:
+    - name: common
+      repository: https://katipwork.github.io/helm-charts
+      version: 0.1.0
+    description: A Helm chart for Kubernetes
+    digest: 02eceda8686bd764807d42f838ecd42984a8725982e779807bb50a234b3ec04c
+    name: example-app
+    type: application
+    urls:
+    - https://github.com/katipwork/helm-charts/releases/download/example-app-0.1.1/example-app-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2026-04-16T15:43:27.156628054Z"
     dependencies:
     - name: common
@@ -44,4 +58,4 @@ entries:
     urls:
     - https://github.com/katipwork/helm-charts/releases/download/nextjs-app-1.0.0/nextjs-app-1.0.0.tgz
     version: 1.0.0
-generated: "2026-04-16T15:43:27.15663651Z"
+generated: "2026-04-18T09:03:16.918074795Z"
