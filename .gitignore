@@ -3,4 +3,5 @@ charts/*/charts/*.tgz
 *.debug
 values.local.yaml
 values.*.local.yaml
+Chart.lock
 
